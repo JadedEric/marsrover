@@ -12,9 +12,9 @@ The problem statement for the Mars Rover kata has been modified over the years t
 > - Mars’s surface has been divided into zones and each zone can be modelled as a two- dimensional cartesian grid. The zones have been very carefully surveyed ahead of me and are deemed safe for explora on within the zone’s bounds, as represented by a single cartesian coordinate. E.g: (5, 5)
 > - The rover understands the cardinal points and can face either East (E), West (W), North (N) or South (S)
 > - The rover understands three commands:
-> -- **M** - Move one space forward in the direction it is facing
-> -- **R** - rotate 90 degrees to the right
-> -- **L** - rotate 90 degrees to the left
+>   - **M** - Move one space forward in the direction it is facing
+>   - **R** - rotate 90 degrees to the right
+>   - **L** - rotate 90 degrees to the left
 > - Due to the transmission delay in communica ng with the rover on Mars, you are only able to send the rover a list of commands.
 
 > These commands will be executed by the rover and its resul ng loca on sent back to HQ. This is an example of the list of commands sent to the rover: 
