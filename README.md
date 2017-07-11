@@ -80,7 +80,11 @@ Additional considerations for the rover:
 
 # Unit testing
 
-The application's functions has been unit tested using Jasmine and Karma runner
+The application's functions has been unit tested using Jasmine and the standalone Jasmine SpecRunner.
+
+To run the unit tests, open the SpecRunner.html file in your browser.
+
+To view the spec, find it under /scripts/spec/roverSpec.ts
 
 License
 ----
