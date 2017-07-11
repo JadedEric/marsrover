@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Mars Rover: TypeScript implementation</title>
+    <link href="css/foundation.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="grid-container">
+        <h4>Enter rover information below, and click "Deploy Rover" to send commands</h4>
+        <form>
+            <div class="grid-x">
+                <div class="small-12 medium-3 cell">
+                    <h5>Location</h5>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-1 cell">
+                    <label>
+                        Location X:
+                        <input type="number" id="location-x" value="1" required />
+                    </label>
+                </div>
+                <div class="small-12 medium-1 cell"></div>
+                <div class="small-12 medium-1 cell">
+                    <label>
+                        Location Y:
+                        <input type="number" id="location-y" value="2" required />
+                    </label>
+                </div>
+                <div class="medium-9 medium-offset-9"></div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-3 cell">
+                    <h5>Grid</h5>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-1 cell">
+                    <label>
+                        Grid X:
+                        <input type="number" id="grid-x" value="8" required />
+                    </label>
+                </div>
+                <div class="small-12 medium-1 cell"></div>
+                <div class="small-12 medium-1 cell">
+                    <label>
+                        Grid Y:
+                        <input type="number" id="grid-y" value="8" required />
+                    </label>
+                </div>
+                <div class="medium-9 medium-offset-9"></div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-3 cell">
+                    <h5>Direction</h5>
+                </div>
+            </div>
+            <div class="grid-x">
+                <fieldset class="small-12 medium-6 cell">
+                    <legend></legend>
+                    <input type="radio" name="rover-direction" id="rover-direction-north" value="N" /><label for="rover-direction-north">North</label>
+                    <input type="radio" name="rover-direction" id="rover-direction-east" value="E" checked /><label for="rover-direction-east">East</label>
+                    <input type="radio" name="rover-direction" id="rover-direction-west" value="W" /><label for="rover-direction-west">West</label>
+                    <input type="radio" name="rover-direction" id="rover-direction-south" value="S" /><label for="rover-direction-south">South</label>
+                </fieldset>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium6 cell">
+                    <h5>Commands (no commas, spaces)</h5>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-6 cell">
+                    <input type="text" id="commands-text" value="MMLMRMMRRMML" required />
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-3 cell">
+                    <button type="button" id="deploy-rover" class="button">Deploy</button>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 medium-6 cell">
+                    <label id="output"></label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/rover.js"></script>
+    <script type="text/javascript">
+        (new mars.rover.deploy());
+    </script>
+
+</body>
+</html>
